@@ -4,7 +4,7 @@ React Packery Component
 [![npm version](https://badge.fury.io/js/react-packery-component.svg)](http://badge.fury.io/js/react-packery-component)
 
 #### Introduction:
-A [React.js](https://facebook.github.io/react/) [Packery](http://packery.metafizzy.co/) component. (Also available as a [mixin](https://github.com/eiriklv/react-packery-mixin) if needed)
+A [React.js](https://facebook.github.io/react/) [Packery](http://packery.metafizzy.co/) [Draggabilly](http://draggabilly.metafizzy.co/)  component. (Also available as a [mixin](https://github.com/eiriklv/react-packery-mixin) if needed)
 
 #### Support
 React >= 0.14.x
