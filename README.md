@@ -9,10 +9,6 @@ A [React.js](https://facebook.github.io/react/) [Packery](http://packery.metafiz
 #### Support
 React >= 0.14.x
 
-#### Live demo:
-[hearsay.me](http://www.hearsay.me)
-
-
 #### Usage:
 
 * Example code:
@@ -61,6 +57,4 @@ var WvPackery = React.createClass({
 
 module.exports = WvPackery;
 
-
-module.exports = Gallery;
 ```
