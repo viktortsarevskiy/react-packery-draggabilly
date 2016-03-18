@@ -14,22 +14,22 @@ React >= 0.14.x
 * Example code:
 
 ```js
-var React = require('react');
-var Packery = require('./PackeryClass');
+import React, { Component, PropTypes } from 'react'
+import PackeryComponent from './Packery'
 
-var packeryOptions = {
+const packeryOptions = {
     // transitionDuration: 0,
     gutter: 10,
     columnWidth: 225
-};
+}
 
-var WvPackery = React.createClass({
+class MyPackery extends Component{
 
-  render: function () {
+  render = function () {
 
-    var actions = this.props.actions;
+    const actions = this.props.actions;
 
-    var childElements = this.props.elements.map(function(brick, index){
+    const childElements = this.props.elements.map(function(brick, index){
      return (
         <div key={index} className="brick">
           <span
@@ -39,22 +39,23 @@ var WvPackery = React.createClass({
           </span>
           {brick.topic.title}
         </div>
-      );
-    });
+      )
+    })
 
     return (
-      <Packery
+      <PackeryComponent
         className={'packery'}
         elementType={'div'}
         options={packeryOptions}
         disableImagesLoaded={false}
       >
         {childElements}
-      </Packery>
-    );
+      </PackeryComponent>
+    )
   }
-});
+};
 
-module.exports = WvPackery;
+module.exports = MyPackery;
+
 
 ```
