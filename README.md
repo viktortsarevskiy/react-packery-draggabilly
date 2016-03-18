@@ -14,7 +14,7 @@ React >= 0.14.x
 * Example code:
 
 ```js
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import PackeryComponent from './Packery'
 
 const packeryOptions = {
@@ -29,15 +29,10 @@ class MyPackery extends Component{
 
     const actions = this.props.actions;
 
-    const childElements = this.props.elements.map(function(brick, index){
+    const childElements = this.props.elements.map(function(child, index){
      return (
-        <div key={index} className="brick">
-          <span
-            onClick={() => actions.deleteBrick(brick.id)}
-            className="cross control-buttons">
-              <i className="fa fa-close"></i>
-          </span>
-          {brick.topic.title}
+        <div key={index} className="child">
+          {child.topic.title}
         </div>
       )
     })
