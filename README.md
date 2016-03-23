@@ -1,4 +1,4 @@
-React Packery Component
+React Packery Draggabilly Component
 =======================
 
 [![npm version](https://badge.fury.io/js/react-packery-component.svg)](http://badge.fury.io/js/react-packery-component)
