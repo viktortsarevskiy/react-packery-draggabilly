@@ -27,8 +27,6 @@ class MyPackery extends Component{
 
   render = function () {
 
-    const actions = this.props.actions;
-
     const childElements = this.props.elements.map(function(child, index){
      return (
         <div key={index} className="child">
@@ -39,6 +37,7 @@ class MyPackery extends Component{
 
     return (
       <PackeryComponent
+        ref="PackeryComponent"
         className={'packery'}
         elementType={'div'}
         options={packeryOptions}
