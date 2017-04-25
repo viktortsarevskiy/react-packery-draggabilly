@@ -1,5 +1,5 @@
 {
-  "name": "react-packery-component",
+  "name": "react-packery-draggabilly",
   "version": "1.0.2",
   "main": "./lib/index",
   "description": "A Packery component for React.js",
